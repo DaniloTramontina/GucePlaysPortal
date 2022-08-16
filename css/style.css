@@ -1,0 +1,489 @@
+/* Neste documento contem as cores a serem usadas */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* nesse documento contem o SCSS geral das paginas 
+como Header, esquema de cores, footer */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #0B316D;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+}
+.header .img-logo {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.header .menu-list {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+.header .menu-list .btn-menu {
+  border: 2px solid transparent;
+  font-size: 17px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #28DADA, #28DADA 50%, #afaeae 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.header .menu-list .btn-menu:before {
+  content: "";
+  background: #28DADA;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-bottom: 2px solid #28DADA;
+}
+.header .menu-list .btn-menu:hover {
+  background-position: 0;
+  border-bottom: 2px solid #28DADA;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.title h1 {
+  font-family: "Roboto", sans-serif;
+}
+.title p {
+  font-size: 20px;
+}
+
+.footer-menu {
+  background-color: #0B316D;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+}
+.footer-menu .img-logo {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.footer-menu .menu-list {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+.footer-menu .menu-list .btn-menu {
+  border: 2px solid transparent;
+  font-size: 17px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #28DADA, #28DADA 50%, #afaeae 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.footer-menu .menu-list .btn-menu:before {
+  content: "";
+  background: #28DADA;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-bottom: 2px solid #28DADA;
+}
+.footer-menu .menu-list .btn-menu:hover {
+  background-position: 0;
+  border-bottom: 2px solid #28DADA;
+}
+
+.back-to-top {
+  color: #ffffff;
+}
+
+.footer {
+  background-color: #0B316D;
+  font-family: "Ubuntu", sans-serif;
+  color: #afaeae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  border-top: 2px solid #afaeae;
+}
+
+/* nesse documento contem todo esquema SCSS do main da pagina index */
+.container {
+  background-color: rgba(146, 146, 146, 0.7764705882);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "main-news sidebar";
+}
+
+.main-news {
+  display: grid;
+  grid-area: main-news;
+  padding: 5px 25px;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(80px, auto);
+  grid-template-areas: "item1 item1 item2" "item3 item4 item4" "item5 item6 item7" "item8 item8 item9";
+}
+
+.link-externo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.item1 {
+  width: 725px;
+  height: 250px;
+  grid-area: item1;
+}
+
+.main-text1 {
+  background-color: #404040;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 550px;
+}
+
+.item1:hover .main-text1 {
+  opacity: 0.8;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.main-text2 {
+  background-color: #404040;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 275px;
+}
+
+.item2:hover .main-text2 {
+  opacity: 0.8;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.main-text3 {
+  background-color: #404040;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 275px;
+}
+
+.item3:hover .main-text3 {
+  opacity: 0.8;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.main-text4 {
+  background-color: #404040;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 550px;
+}
+
+.item4:hover .main-text4 {
+  opacity: 0.8;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.main-text5 {
+  background-color: #404040;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 275px;
+}
+
+.item5:hover .main-text5 {
+  opacity: 0.8;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+.main-text6 {
+  background-color: #404040;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 275px;
+}
+
+.item6:hover .main-text6 {
+  opacity: 0.8;
+}
+
+.item7 {
+  grid-area: item7;
+}
+
+.main-text7 {
+  background-color: #404040;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 275px;
+}
+
+.item7:hover .main-text7 {
+  opacity: 0.8;
+}
+
+.item8 {
+  grid-area: item8;
+}
+
+.main-text8 {
+  background-color: #404040;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 550px;
+}
+
+.item8:hover .main-text8 {
+  opacity: 0.8;
+}
+
+.item9 {
+  grid-area: item9;
+}
+
+.main-text9 {
+  background-color: #404040;
+  color: #ffffff;
+  position: absolute;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 275px;
+}
+
+.item9:hover .main-text9 {
+  opacity: 0.8;
+}
+
+.double-news img {
+  width: 725px;
+  height: 250px;
+}
+
+.simple-news img {
+  width: 350px;
+  height: 250px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.advertising {
+  padding: 25px;
+  background-color: #404040;
+}
+
+.content-advertising {
+  border: 1px solid transparent;
+  padding: 5px 25px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  height: auto;
+  cursor: pointer;
+}
+.content-advertising:hover {
+  border: 1px solid black;
+}
+
+.advertising-title {
+  font-family: "Ubuntu", sans-serif;
+  min-width: 170px;
+}
+
+.advertising-description {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.extra-content {
+  display: grid;
+  grid-area: extra-content;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(80px, auto);
+  grid-template-areas: "extra1 extra2 extra3";
+  margin: 25px 25px;
+  padding: 15px;
+  gap: 15px;
+}
+
+.extra-item1 {
+  grid-area: extra1;
+  border-right: 2px solid black;
+}
+
+.extra-item2 {
+  grid-area: extra2;
+  border-right: 2px solid black;
+}
+
+.extra-item3 {
+  grid-area: extra3;
+}
+
+main {
+  background-color: rgba(146, 146, 146, 0.7764705882);
+}
+
+.form-title {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+.main-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-data {
+  background-color: #404040;
+  padding: 25px;
+  border: 2px solid #404040;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.form-data .form-data-item {
+  padding: 5px;
+}
+.form-data .form-data-input {
+  display: flex;
+  width: 250px;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.form-submit {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.form-submit input {
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.mandatory {
+  font-size: 10px;
+  padding-top: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */
