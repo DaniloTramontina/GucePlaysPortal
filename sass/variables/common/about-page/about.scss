@@ -1,0 +1,29 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  background-color: $text-background;
+  color: #ffffff;
+  width: 50%;
+  padding: 15px;
+  font-family: $roboto;
+  text-indent: 25px;
+  line-height: 25px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: $text-background;
+  color: #ffffff;
+  width: 50%;
+  padding: 15px;
+  font-family: $roboto;
+  align-items: center;
+  border-top: 2px solid $second-color;
+}

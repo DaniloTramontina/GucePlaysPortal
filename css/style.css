@@ -438,7 +438,7 @@ como Header, esquema de cores, footer */
   grid-area: extra3;
 }
 
-main {
+#register {
   background-color: rgba(146, 146, 146, 0.7764705882);
 }
 
@@ -474,6 +474,7 @@ main {
   margin-top: 25px;
   display: flex;
   justify-content: center;
+  gap: 12px;
 }
 .form-submit input {
   padding: 12px;
@@ -484,6 +485,36 @@ main {
 .mandatory {
   font-size: 10px;
   padding-top: 15px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  background-color: #404040;
+  color: #ffffff;
+  width: 50%;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  text-indent: 25px;
+  line-height: 25px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #404040;
+  color: #ffffff;
+  width: 50%;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  border-top: 2px solid #28DADA;
 }
 
 /*# sourceMappingURL=style.css.map */

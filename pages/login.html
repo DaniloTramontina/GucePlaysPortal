@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Portal Guce Plays</title>
   </head>
-  <a href="#top"></a>
   <body>
     <header class="header">
       <!--Logo e menu -->
@@ -43,8 +42,41 @@
         </ul>
       </nav>
     </header>
-    <main>
-
+    <main class="container">
+      <div class="title">
+        <h1 class="main-title">LOGIN</h1>
+        <p class="description">
+          Faça seu login para ter acesso a todas as novidades.
+        </p>
+      </div>
+      <section class="main-form">
+        <div class="form-data">
+          <form class="register">
+            <div class="form-data-item">
+              <label for="cpf">CPF*:</label>
+              <input type="text" name="cpf" \
+			        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+			        title="xxx.xxx.xxx-xx"
+              class="form-data-input" 
+              />
+            </div>
+            <div class="form-data-item">
+              <label for="password">Senha*:</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Senha"
+                class="form-data-input"
+                />
+            </div>
+            <div class="form-submit">
+              <input type="submit" value="Entrar" />
+              <a href="../index.html" class="back"><input type="submit" value="Cancelar" /></a>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <section class="footer-menu">
       <a href="../index.html">
@@ -54,7 +86,7 @@
           class="img-logo"
         />
       </a>
-      <nav class="footer-menu">
+      <nav class="footer-menu-nav">
         <ul class="menu-list">
           <li class="menu-item">
             <a href="../index.html"><button class="btn-menu">Home</button></a>
@@ -76,7 +108,6 @@
           </li>
         </ul>
       </nav>
-      <a href="#top" class="back-to-top">Inicio da Pagina</a>
     </section>
     <footer class="footer">
       <h3>By Danilo Tramontina</h3>

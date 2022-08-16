@@ -1,4 +1,6 @@
-main{
+//nesse scss vc vai encontrar as configurações da pagina de cadastro e de login.
+
+#register{
   background-color: $background;
 }
 
@@ -34,6 +36,7 @@ main{
   margin-top: 25px;
   display: flex;
   justify-content: center;
+  gap: 12px;
   & input {
     padding: 12px;
     border-radius: 12px;
