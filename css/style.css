@@ -516,5 +516,8 @@ como Header, esquema de cores, footer */
   align-items: center;
   border-top: 2px solid #28DADA;
 }
+.about-info .sec-list {
+  margin-left: 25px;
+}
 
 /*# sourceMappingURL=style.css.map */
