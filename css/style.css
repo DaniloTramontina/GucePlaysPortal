@@ -9,12 +9,16 @@ como Header, esquema de cores, footer */
   text-decoration: none;
 }
 
+body {
+  max-width: 100%;
+}
+
 .header {
   background-color: #0B316D;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   min-height: 80px;
 }
 .header .img-logo {
@@ -57,6 +61,11 @@ como Header, esquema de cores, footer */
   border-bottom: 2px solid #28DADA;
 }
 
+.container {
+  min-height: 100vh;
+  background-color: rgba(146, 146, 146, 0.7764705882);
+}
+
 .title {
   text-align: center;
   margin-bottom: 20px;
@@ -73,7 +82,7 @@ como Header, esquema de cores, footer */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   min-height: 80px;
 }
 .footer-menu .img-logo {
@@ -133,17 +142,11 @@ como Header, esquema de cores, footer */
 }
 
 /* nesse documento contem todo esquema SCSS do main da pagina index */
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(146, 146, 146, 0.7764705882);
-}
-
 .main-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "main-news sidebar";
+  flex-wrap: wrap;
 }
 
 .main-news {
@@ -519,6 +522,10 @@ como Header, esquema de cores, footer */
 }
 
 @media (max-width: 770px) {
+  .main-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "main-news" "sidebar";
+  }
   .double-news img {
     width: 350px;
     height: 250px;
@@ -559,9 +566,21 @@ como Header, esquema de cores, footer */
     opacity: 0.8;
     width: 275px;
   }
+  .item9 img {
+    width: 725px;
+    height: 250px;
+  }
   .main-text9 {
     opacity: 0.8;
     width: 275px;
+  }
+  aside {
+    display: flex;
+    justify-content: center;
+  }
+  .advertising {
+    width: 80%;
+    margin: 0px 15px;
   }
 }
 

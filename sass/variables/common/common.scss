@@ -7,12 +7,16 @@ como Header, esquema de cores, footer */
   text-decoration: none;
 }
 
+body{
+  max-width: 100%;
+}
+
 .header {
   background-color: $first-color;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   min-height: 80px;
   .img-logo {
     width: 80px;
@@ -60,6 +64,11 @@ como Header, esquema de cores, footer */
   }
 }
 
+.container{
+  min-height: 100vh;
+  background-color: $background;
+}
+
 .title {
   text-align: center;
   margin-bottom: 20px;
@@ -76,7 +85,7 @@ como Header, esquema de cores, footer */
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   min-height: 80px;
   .img-logo {
     width: 80px;

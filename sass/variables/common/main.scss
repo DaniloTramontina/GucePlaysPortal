@@ -13,17 +13,12 @@
   font-weight: $font-weight;
 }
 
-.container{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: $background;
-}
 
 .main-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "main-news sidebar";
+  flex-wrap: wrap;
 }
 
 .main-news {
