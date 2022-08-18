@@ -1,0 +1,64 @@
+@media (max-width: 770px) {
+  .double-news {
+    img
+    {
+      width: 350px;
+      height: 250px;
+    }
+  }
+  .main-news {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4"
+      "item5 item6"
+      "item7 item8"
+      "item9 item9";
+
+  }
+
+  .main-text1 {
+    opacity: 0.8;
+    width: 275px;
+  }
+  
+  .main-text2{
+    opacity: 0.8;
+    width: 275px;
+  
+  }
+  
+  .main-text3{
+    opacity: 0.8;
+    width: 275px;
+  }
+  
+  .main-text4{
+    opacity: 0.8;
+    width: 275px;
+  }
+  .main-text5{
+    opacity: 0.8;
+    width: 275px;
+  }
+  
+  .main-text6{
+    opacity: 0.8;
+    width: 275px;
+  }
+  
+  .main-text7{
+    opacity: 0.8;
+    width: 275px;
+  }
+  
+  .main-text8{
+    opacity: 0.8;
+    width: 275px;
+  }
+  
+  .main-text9{
+    opacity: 0.8;
+    width: 275px;
+  }
+}

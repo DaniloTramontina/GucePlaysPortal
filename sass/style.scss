@@ -4,16 +4,23 @@
 //esse import são as fontes
 @import "./variables/fonts/fonts.scss";
 
-//esse import é o common
+//esse import é o common cfg dos headers e footers
 @import "./variables/common/common.scss";
 
 //esse é as cfg do main da pagina index
 @import "./variables/common/main.scss";
 
+// essa é a cfg do sibebar da pagina principal
 @import "./variables/common/sidebar.scss";
 
+// essa é a cfg do conteudo extra da pagina principal
 @import "./variables/common/extra.scss";
 
+// essa é a cfg das paginas de cadastro e de login
 @import "./variables/common/register-page/register.scss";
 
-@import "./variables/common/about-page/about.scss"
+// essa é a cfg da pagina about
+@import "./variables/common/about-page/about.scss";
+
+// essa cfg é da responsividade
+@import "./variables/common/media.scss";
